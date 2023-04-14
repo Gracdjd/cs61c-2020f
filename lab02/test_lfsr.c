@@ -25,7 +25,11 @@ int main() {
             printf(" ... etc etc ... \n");
         }
         for (i = 0; i < 32; i++)
+        {
             lfsr_calculate(&reg);
+            // printf("%hu\n", reg);
+        }
+
     } while (numbers[reg] != 1);
 
     printf("Got %u numbers before cycling!\n", count);
